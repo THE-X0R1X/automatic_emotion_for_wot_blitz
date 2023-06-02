@@ -236,10 +236,10 @@ CStart::CStart()
     this->checking_current_monitor_resolution();
     this->get_handle_window();
 
-    if (std::filesystem::exists(".\AE for WoT Blitz by x0r1x v1.0.exe"))
-        this->file_not_found();
+    if (std::filesystem::exists("./AE for WoT Blitz by x0r1x v1.0.exe"))
+        std::make_unique<CMouse>();
 
-    std::make_unique<CMouse>();
+    this->file_not_found();
 }
 //--------------------------------------------------------------------------------------------------
 
