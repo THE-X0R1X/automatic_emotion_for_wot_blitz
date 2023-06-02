@@ -237,9 +237,9 @@ CStart::CStart()
     this->get_handle_window();
 
     if (std::filesystem::exists(".\AE for WoT Blitz by x0r1x v1.0.exe"))
-        std::make_unique<CMouse>();
-    else 
         this->file_not_found();
+    else 
+        std::make_unique<CMouse>();
 }
 //--------------------------------------------------------------------------------------------------
 
